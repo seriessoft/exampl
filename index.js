@@ -1,14 +1,14 @@
 var express = require('express');
-var server = express();
+var app = express();
 var port = process.env.PORT || 3000;
 const SocketServer = require('ws').Server;
 const path = require('path');
 
-server.get('/',function(request, response){
+app.get('/',function(request, response){
   response.send("Hello!");
 });
 
-server.listen(PORT);
+app.listen(PORT);
 
 const INDEX = path.join(__dirname, 'index.html');
 
