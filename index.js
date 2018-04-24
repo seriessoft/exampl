@@ -4,11 +4,11 @@ var PORT = process.env.PORT || 5000;
 const SocketServer = require('ws').Server;
 const path = require('path');
 
-app.get('/',function(request, response){
+/*app.get('/',function(request, response){
   response.send("Hello!");
 });
 
-app.listen(PORT);
+app.listen(PORT);*/
 
 const INDEX = path.join(__dirname, 'index.html');
 
