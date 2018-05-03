@@ -3,7 +3,8 @@ var app = express();
 var PORT = process.env.PORT || 5000;
 const SocketServer = require('ws').Server;
 const path = require('path');
-var Firebase = require('firebase');
+//var Firebase = require('firebase');
+import * as firebase from "firebase";
 /*app.get('/',function(request, response){
   response.send("Hello!");
 });
